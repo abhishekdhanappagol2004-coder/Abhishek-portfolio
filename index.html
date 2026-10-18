@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Abhishek Dhanappagol - React / Full Stack Developer" />
+  <title>Abhishek Dhanappagol | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#home" class="logo">Abhishek<span>.</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌙</button>
+      <button id="menuToggle" class="icon-btn menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Abhishek Dhanappagol</h1>
+        <h2>I build <span id="typed" class="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead">
+          Recent Computer Science graduate with hands-on experience in JavaScript, React.js,
+          HTML and CSS. Passionate about building interactive web applications and seeking an
+          entry-level React / Full Stack Developer role to contribute and grow.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary">Contact Me</a>
+          <a href="#projects" class="btn outline">View Projects</a>
+          <!-- Put your resume PDF in the same folder and name it resume.pdf -->
+          <a href="resume.pdf" class="btn outline" download="Abhishek_Dhanappagol_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <img class="avatar" src="photo.jpg" alt="Abhishek Dhanappagol" />
+        <ul class="quick-info">
+          <li>📍 Bangalore, Karnataka</li>
+          <li>🎓 B.E. Computer Science · CGPA 8.3</li>
+          <li>💼 Full Stack Developer Trainee @ Pentagon Space</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid reveal">
+        <p>
+          I'm a Computer Science engineer (B.E., 2022–2026) from Bangalore who enjoys turning ideas
+          into clean, responsive and interactive web applications. Through my Java Full Stack
+          training at Pentagon Space I've worked across the stack - React.js on the front end,
+          Java, Node.js and SQL on the back end - and I use Git and GitHub for everyday version control.
+        </p>
+        <div class="stats">
+          <div class="stat"><strong>8.3</strong><span>CGPA</span></div>
+          <div class="stat"><strong>2+</strong><span>Major Projects</span></div>
+          <div class="stat"><strong>2</strong><span>Achievements</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Programming Languages</h3>
+          <div class="tags"><span>JavaScript (ES6+)</span><span>Core Java</span><span>SQL</span></div>
+        </div>
+        <div class="card reveal">
+          <h3>Frontend Technologies</h3>
+          <div class="tags"><span>React.js</span><span>HTML5</span><span>CSS3</span></div>
+        </div>
+        <div class="card reveal">
+          <h3>React &amp; Web Development</h3>
+          <div class="tags">
+            <span>Components</span><span>Props</span><span>State</span><span>Hooks</span>
+            <span>Events</span><span>Forms</span><span>Conditional Rendering</span>
+            <span>API Integration</span><span>Responsive Design</span>
+          </div>
+        </div>
+        <div class="card reveal">
+          <h3>Databases</h3>
+          <div class="tags"><span>MySQL</span><span>Oracle SQL</span></div>
+        </div>
+        <div class="card reveal">
+          <h3>Developer Tools</h3>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span></div>
+        </div>
+        <div class="card reveal">
+          <h3>AI Developer Tools</h3>
+          <div class="tags"><span>ChatGPT</span><span>GitHub Copilot</span><span>Google Gemini</span><span>Claude</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="cards two">
+        <article class="card project reveal">
+          <h3>Academia360</h3>
+          <p class="subtitle">Student Academic Record Management System</p>
+          <ul>
+            <li>Built a role-based multi-user platform (Student / Faculty / Admin) with JWT authentication and bcrypt password hashing.</li>
+            <li>Designed a normalized MySQL schema for multi-institution academic tracking, marks and attendance.</li>
+            <li>Developed RESTful APIs for CRUD operations across academic years, subjects and student records.</li>
+          </ul>
+          <div class="tags"><span>Node.js</span><span>Express.js</span><span>MySQL</span><span>JWT</span><span>bcrypt</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+          <div class="links">
+            <!-- Replace the GitHub link with the exact project repo URL when ready -->
+            <a href="https://github.com/abhishekdhanappagol2004-coder" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <h3>Furniture Ecommerce</h3>
+          <p class="subtitle">Multi-Page Furniture Storefront</p>
+          <ul>
+            <li>Built a browser-only ecommerce experience with product browsing, search and pagination from a JSON dataset.</li>
+            <li>Implemented cart and wishlist functionality using localStorage, persisted across pages.</li>
+            <li>Created a buy-now checkout flow supporting single-item and full-cart purchase summaries, with a light/dark theme toggle.</li>
+          </ul>
+          <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript (ES6+)</span><span>JSON</span><span>LocalStorage</span></div>
+          <div class="links">
+            <a href="https://github.com/abhishekdhanappagol2004-coder" target="_blank" rel="noopener">GitHub →</a>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <h2 class="section-title reveal">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="date">02/2026 – Present</span>
+          <h3>Full Stack Developer Trainee (Intern)</h3>
+          <p class="subtitle">Pentagon Space</p>
+          <ul>
+            <li>Gained hands-on experience in full-stack development using JavaScript, React.js, Java and SQL.</li>
+            <li>Developed responsive UIs using React.js, HTML5, CSS3 and JavaScript.</li>
+            <li>Practiced React components, props, state, hooks, forms and event handling.</li>
+            <li>Worked with backend integration, databases, Git and GitHub.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="section-title sub reveal">Certifications</h2>
+      <div class="cards">
+        <div class="card reveal"><h3>🎓 Java Full Stack</h3><p class="subtitle">Pentagon Space</p></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="date">12/2022 – 06/2026</span>
+          <h3>Bachelor of Engineering (B.E.), Computer Science</h3>
+          <p class="subtitle">Dr. Sri Shivakumara Mahaswamy College of Engineering, Bangalore</p>
+          <p>CGPA: 8.3</p>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="date">01/2020 – 02/2022</span>
+          <h3>Pre-University (12th Grade)</h3>
+          <p class="subtitle">Alva's PU College, Moodbidri</p>
+          <p>State Board · 80%</p>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="date">01/2018 – 01/2020</span>
+          <h3>SSLC (10th Grade)</h3>
+          <p class="subtitle">St. Francis of Assisi School, Chikodi</p>
+          <p>ICSE Board · 76%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section alt">
+      <h2 class="section-title reveal">Achievements</h2>
+      <div class="cards two">
+        <div class="card reveal">
+          <h3>🥈 Runner-Up – Academia360</h3>
+          <p>Recognized as Runner-Up for 'Academia360', a comprehensive academic management system presented at the college project showcase.</p>
+        </div>
+        <div class="card reveal">
+          <h3>💡 Expenses Splitter – Hackathon</h3>
+          <p>Developed an 'Expenses Splitter' app as part of an inter-college Hackathon, showing teamwork, problem-solving abilities and rapid prototyping skills.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="section-title reveal">Get In Touch</h2>
+      <div class="contact-wrap reveal">
+        <p>I'm open to entry-level React / Full Stack Developer opportunities. Let's talk!</p>
+        <div class="contact-links">
+          <a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=abhishekdhanappagol2004@gmail.com&su=Portfolio%20enquiry" target="_blank" rel="noopener">✉ abhishekdhanappagol2004@gmail.com</a>
+          <a class="btn outline" href="tel:+918088445044">📞 +91 80884 45044</a>
+          
+          <a class="btn outline" href="https://www.linkedin.com/in/abhishek12121/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn outline" href="https://github.com/abhishekdhanappagol2004-coder" target="_blank" rel="noopener">GitHub</a>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="https://formsubmit.co/abhishekdhanappagol2004@gmail.com" method="POST">
+          <input type="text" id="cname" name="name" placeholder="Your name" required />
+          <input type="email" id="cemail" name="email" placeholder="Your email" required />
+          <textarea id="cmsg" name="message" rows="4" placeholder="Your message" required></textarea>
+          <!-- FormSubmit settings -->
+          <input type="hidden" name="_subject" value="New message from your portfolio website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" />
+          <button type="submit" class="btn primary" id="sendBtn">Send Message</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Abhishek Dhanappagol · Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <button id="toTop" class="to-top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
